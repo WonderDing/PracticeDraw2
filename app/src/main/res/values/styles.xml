@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="HenCoderTabTextAppearance">
+    <style name="HenCoderTabTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
         <item name="textAllCaps">false</item>
         <item name="android:textAllCaps">false</item>
     </style>
