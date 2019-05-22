@@ -34,7 +34,7 @@ public class Sample14MaskFilterView extends View {
     }
 
     {
-        setLayerType(LAYER_TYPE_SOFTWARE, null);
+//        setLayerType(LAYER_TYPE_SOFTWARE, null);
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.what_the_fuck);
     }
 

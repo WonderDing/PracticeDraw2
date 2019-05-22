@@ -2,8 +2,10 @@ package com.hencoder.hencoderpracticedraw2.practice;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PathEffect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.view.View;
 public class Practice12PathEffectView extends View {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     Path path = new Path();
+    PathEffect cornerPathEffect = new CornerPathEffect(50);
 
     public Practice12PathEffectView(Context context) {
         super(context);
@@ -40,7 +43,7 @@ public class Practice12PathEffectView extends View {
         super.onDraw(canvas);
 
         // 使用 Paint.setPathEffect() 来设置不同的 PathEffect
-
+        paint.setPathEffect(cornerPathEffect);
         // 第一处：CornerPathEffect
         canvas.drawPath(path, paint);
 

@@ -36,7 +36,6 @@ public class Practice06LightingColorFilterView extends View {
         super.onDraw(canvas);
 
         // 使用 Paint.setColorFilter() 来设置 LightingColorFilter
-
         // 第一个 LightingColorFilter：去掉红色部分
         canvas.drawBitmap(bitmap, 0, 0, paint);
 
